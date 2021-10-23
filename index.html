@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="player">
+          <div class="title">
+            <h1 class="singer">Eminem</h1>
+            <p class="music">Lose yourself</p>
+          </div>
+          <div class="img">
+            <img src="./images/bg-0.jpg" alt="" />
+          </div>
+          <div class="control">
+            <audio src="./music/1.mp3"></audio>
+            <div class="buttons">
+              <button class="prew"><i class="fas fa-step-backward"></i></button>
+              <button class="play-pause">
+                <i id="play" class="fas fa-play"></i>
+                <i id="pause" class="fas fa-pause"></i>
+              </button>
+              <button class="next"><i class="fas fa-step-forward"></i></button>
+            </div>
+            <div class="progress">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="music-list">
+          <h1>Music List</h1>
+          <div class="list">
+            <ul class="ul-list"></ul>
+          </div>
+          <p class="item">You have <span class="item-lenght"></span> music</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
